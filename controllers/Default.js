@@ -13,7 +13,8 @@ module.exports.authorsAuthorIdDELETE = function authorsAuthorIdDELETE (req, res,
     });
 };
 
-module.exports.authorsAuthorIdGET = function authorsAuthorIdGET (req, res, next, authorId) {
+module.exports.authorsAuthorIdGET = function authorsAuthorIdGET (req, res) {
+  const authorId = req.params;
   Default.authorsAuthorIdGET(authorId)
     .then(function (response) {
       utils.writeJson(res, response);
