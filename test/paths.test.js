@@ -80,4 +80,3 @@ test('POST /categories echoes a created category shape', async (t) => {
     t.is(res.statusCode, 200);
 });
 
-// Profanws mporousa na kanw ki alla alla variomouna, eksetash einai re malakes hmarton
