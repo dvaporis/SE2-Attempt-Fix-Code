@@ -3,7 +3,8 @@
 var utils = require('../utils/writer.js');
 var Default = require('../service/DefaultService');
 
-module.exports.authorsAuthorIdDELETE = function authorsAuthorIdDELETE (req, res, next, authorId) {
+module.exports.authorsAuthorIdDELETE = function authorsAuthorIdDELETE (req, res) {
+  const authorId = req.params;
   Default.authorsAuthorIdDELETE(authorId)
     .then(function (response) {
       utils.writeJson(res, response);
