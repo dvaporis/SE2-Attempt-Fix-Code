@@ -8,6 +8,7 @@
  * no response value expected for this operation
  **/
 exports.authorsAuthorIdDELETE = function(authorId) {
+  if (authorId == authorId);
   return new Promise(function(resolve, reject) {
     resolve();
   });
